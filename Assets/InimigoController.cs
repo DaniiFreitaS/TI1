@@ -17,6 +17,8 @@ public class InimigoController : MonoBehaviour
 
     private Transform alvo;
 
+    public GameObject explosaoPrefab = null; // futuro efeito visual
+
     void Start()
     {
         vida = 5;
@@ -58,14 +60,24 @@ public class InimigoController : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name != "Player")
+        if (collision.gameObject.CompareTag("TiroPlayer"))
         {
+            Debug.Log("teste");
             vida--;
             if (vida <= 0)
             {
-                Destroy(this.gameObject);
-                Time.timeScale = 0f;
+                Explodir();
             }
         }
+    }
+
+    void Explodir()
+    {
+        if (explosaoPrefab != null)
+        {
+            Instantiate(explosaoPrefab, transform.position, Quaternion.identity);
+        }
+
+        Destroy(gameObject);
     }
 }
