@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 2755930328896563573}
   - component: {fileID: 3189483302523840381}
   - component: {fileID: 3333728431409501519}
+  - component: {fileID: 7439228562695508042}
   m_Layer: 0
   m_Name: Tiro
   m_TagString: TiroPlayer
@@ -151,7 +152,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7018765556580808314}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af54f38eb1ec3c040830d2b49cee3f27, type: 3}
   m_Name: 
@@ -184,3 +185,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7439228562695508042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7018765556580808314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90acd2e634135694f9ecc6f6c5b135a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 100
+  tempoDestruir: 5

@@ -33,7 +33,7 @@ public class BombaController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+            PlayerVida player = collision.gameObject.GetComponent<PlayerVida>();
             if (player != null)
             {
                 player.ReceberDano(1); // Aplica 1 de dano

@@ -95,10 +95,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8527545648353075205}
-  - component: {fileID: 4437351384912737760}
-  - component: {fileID: 4787508702899790329}
   - component: {fileID: 5997727543813929186}
   - component: {fileID: 6877738538346198922}
+  - component: {fileID: 7044362476727441911}
+  - component: {fileID: 7224702516491666462}
+  - component: {fileID: 7655563007412996335}
+  - component: {fileID: 8223920147142797859}
+  - component: {fileID: 3248230971848152038}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -123,39 +126,6 @@ Transform:
   - {fileID: 9109671303541145461}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4437351384912737760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1738673525754329984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c7512a3e2967a748a10e62ac07a72c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  str: 10
-  arma: {fileID: 1553761789084970461}
-  vida: 3
-  velocidadeRotacao: 30
-  limiteSuperior: 45
-  limiteInferior: -10
---- !u!114 &4787508702899790329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1738673525754329984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 122d2259c0b8460479cddcf027ac28fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 7018765556580808314, guid: 08a3f59aa34a55840bebab0fee7b8747, type: 3}
-  tela: {fileID: 0}
-  arma: {fileID: 1553761789084970461}
 --- !u!143 &5997727543813929186
 CharacterController:
   m_ObjectHideFlags: 0
@@ -202,6 +172,82 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7044362476727441911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738673525754329984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6820e2510bce22c4fa1c1f6e3c64f083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movimento: {fileID: 0}
+  mira: {fileID: 0}
+  tiro: {fileID: 0}
+  vida: {fileID: 0}
+--- !u!114 &7224702516491666462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738673525754329984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467fd68db55d70b41a400f476f6dcb76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arma: {fileID: 1553761789084970461}
+  rotacaoSpeed: 30
+  anguloMax: 0
+  anguloMin: -45
+--- !u!114 &7655563007412996335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738673525754329984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c079f8646dee74fb07a8395192cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 10
+  limiteX: 70
+  limiteZMax: 40
+  limiteZMin: -10
+--- !u!114 &8223920147142797859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738673525754329984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2497fade074c2444c80a87ae32ffe0b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabTiro: {fileID: 7018765556580808314, guid: 08a3f59aa34a55840bebab0fee7b8747, type: 3}
+  pontoDisparo: {fileID: 1553761789084970461}
+  tela: {fileID: 0}
+--- !u!114 &3248230971848152038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738673525754329984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a41554adc5bfd6f429a764f841da0399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 3
 --- !u!1 &3745236053223590300
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class TiroController : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, tempoDestruir);
+        Destroy(this.gameObject, tempoDestruir);
     }
 
     void Update()
@@ -19,7 +19,7 @@ public class TiroController : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 }
