@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8006374388699562896}
   - component: {fileID: 7196415561618359891}
   - component: {fileID: 3682786004035528527}
-  - component: {fileID: -3504289487917743826}
   m_Layer: 0
   m_Name: Inimigo
   m_TagString: Untagged
@@ -73,18 +72,7 @@ MonoBehaviour:
   prefabTiro: {fileID: 3894250091517326274, guid: 82fde8c253290254ba8929583fb214e3, type: 3}
   pontoDisparo: {fileID: 5270351376949034923}
   tempoEntreTiros: 2
---- !u!114 &-3504289487917743826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458964558665306335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43458e289689cb140bd8c90580f55075, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  explosaoPrefab: {fileID: 0}
 --- !u!1 &2584086875543792342
 GameObject:
   m_ObjectHideFlags: 0
