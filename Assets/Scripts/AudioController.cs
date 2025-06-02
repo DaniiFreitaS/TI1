@@ -23,9 +23,14 @@ public class AudioController : MonoBehaviour
     {
         
             mixer.SetFloat("MasterVol", master.value);
-            Debug.Log("oiiiii");
+            //Debug.Log("oiiiii");
        
 
+    }
+
+    public void Update()
+    {
+        MudarVolume();
     }
 
 }

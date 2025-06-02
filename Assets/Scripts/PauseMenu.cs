@@ -38,6 +38,13 @@ public class PauseMenu : MonoBehaviour
     public void VoltarMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MenuInicial"); // ajuste para o nome da sua cena de menu
+        Debug.Log("teste3");
+        SceneManager.LoadScene("Fase1"); // ajuste para o nome da sua cena de menu
+    }
+
+    public void Sair()
+    {
+        Application.Quit();
+
     }
 }
