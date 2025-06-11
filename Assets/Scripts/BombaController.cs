@@ -10,7 +10,7 @@ public class BombaController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Piso"))
         {
-            // A bomba pode parar de se mover se quiser:
+            // A bomba para de se mexer quando bate no piso
             GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
             GetComponent<Rigidbody>().isKinematic = true;
         }
