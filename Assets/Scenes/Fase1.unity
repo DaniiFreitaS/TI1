@@ -1845,11 +1845,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1017825520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0707c080bbb1bcf4abba278cc5e829c8, type: 3}
+  m_Script: {fileID: 11500000, guid: cb32423f0033ec74082921a81d895584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefabInimigo: {fileID: 458964558665306335, guid: 89db7dd022c36e64ca6ce8bc03d1bb6a, type: 3}
-  tela: {fileID: 0}
+  tela: {fileID: 1757163834}
 --- !u!4 &1055768442 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8527545648353075205, guid: c071fad5a90b50847bbb8305e963cb43, type: 3}
@@ -2583,7 +2583,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1757163834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc495fe39bdae1747a8adb169b26bfcb, type: 3}
+  m_Script: {fileID: 11500000, guid: a221c370c88b4a1438a1962c456f73fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
@@ -2838,7 +2838,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2120566177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fd9a1b565c13ea4c8e46b28762feb3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d459d5c23468d64099eea9a7c366f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pisos:
