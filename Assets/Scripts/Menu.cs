@@ -3,24 +3,48 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject painelPausa;
+    private bool jogoPausado = false;
+
     void Start()
     {
-        
+        painelPausa.SetActive(false); // desativa no início
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (jogoPausado)
+                Retomar();
+            else
+                Pausar();
+        }
     }
-    public void Jogar()
+
+    public void Pausar()
     {
-        SceneManager.LoadScene("Fase1");
+        painelPausa.SetActive(true);
+        Time.timeScale = 0f;
+        jogoPausado = true;
     }
+
+    public void Retomar()
+    {
+        painelPausa.SetActive(false);
+        Time.timeScale = 1f;
+        jogoPausado = false;
+    }
+
+    public void VoltarMenu()
+    {
+        Time.timeScale = 1f;
+        Debug.Log("teste3");
+        SceneManager.LoadScene("Fase1"); // ajuste para o nome da sua cena de menu
+    }
+
     public void Sair()
     {
         Application.Quit();
-        Debug.Log("Saiu do jogo.");
+
     }
 }
