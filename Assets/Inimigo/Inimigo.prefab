@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 5
-  prefabTiro: {fileID: 3894250091517326274, guid: 82fde8c253290254ba8929583fb214e3, type: 3}
+  prefabTiro: {fileID: 56793413920543781, guid: b77a545e5c3bf3043ad5e7cdaa5360f4, type: 3}
   pontoDisparo: {fileID: 5270351376949034923}
   tempoEntreTiros: 2
   explosaoPrefab: {fileID: 0}
@@ -97,13 +97,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4267987741117700369}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.17588313, y: 0.33934993, z: 0.49077275, w: 0.7829744}
   m_LocalPosition: {x: 0, y: -11.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8006374388699562896}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -3.306, y: 44.847, z: 782.795}
 --- !u!1001 &2440714004455828311
 PrefabInstance:
   m_ObjectHideFlags: 0

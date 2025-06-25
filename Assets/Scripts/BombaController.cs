@@ -5,6 +5,7 @@ public class BombaController : MonoBehaviour
     public int vida = 1;
     public int dano = 1;
     public GameObject explosaoPrefab = null; // futuro efeito visual
+    public GameObject hitParticle;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -49,7 +50,13 @@ public class BombaController : MonoBehaviour
         {
             Instantiate(explosaoPrefab, transform.position, Quaternion.identity);
         }
-
+        ExplosaoInstanciet();
         Destroy(gameObject);
+    }
+
+    public void ExplosaoInstanciet()
+    {
+        GameObject hit = Instantiate(hitParticle, this.transform.position, Quaternion.identity);
+        Destroy(hit, 1f);
     }
 }
