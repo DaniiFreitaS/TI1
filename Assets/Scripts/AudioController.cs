@@ -12,6 +12,7 @@ public class AudioController : MonoBehaviour
 
 
     public Slider master;
+    public Slider effects;
 
     public void PlayAudio(int indice)
     {
@@ -21,11 +22,11 @@ public class AudioController : MonoBehaviour
 
     public void MudarVolume()
     {
-        
-            mixer.SetFloat("MasterVol", master.value);
-            //Debug.Log("oiiiii");
-       
-
+        mixer.SetFloat("MasterVol", master.value);
+    }
+    public void MudarVolumeEfeitos()
+    {
+        mixer.SetFloat("EffectsVol", effects.value);
     }
 
     public void Update()
