@@ -18,6 +18,8 @@ public class InimigoController : MonoBehaviour
 
     private Transform alvo;
 
+    public GameObject hitParticle;
+
     public GameObject explosaoPrefab = null; // futuro efeito visual
 
     void Start()
@@ -65,9 +67,11 @@ public class InimigoController : MonoBehaviour
         {
             Debug.Log("teste");
             vida--;
+            ExplosaoInstanciet();
             if (vida <= 0)
             {
                 Explodir();
+                ExplosaoInstanciet();
             }
         }
     }
@@ -81,5 +85,11 @@ public class InimigoController : MonoBehaviour
 
         Destroy(gameObject);
         SceneManager.LoadScene("TelaVitoria");
+    }
+
+    public void ExplosaoInstanciet()
+    {
+        GameObject hit = Instantiate(hitParticle, this.transform.position, Quaternion.identity);
+        Destroy(hit, 1f);
     }
 }
