@@ -6,8 +6,8 @@ public class InimigoController : MonoBehaviour
     public int vida = 5;
 
     private float velocidade = 10f;
-    private float limiteEsquerdo = -30f;
-    private float limiteDireito = 30f;
+    private float limiteEsquerdo = -10f;
+    private float limiteDireito = 25f;
 
     public GameObject prefabTiro;
     public Transform pontoDisparo;
