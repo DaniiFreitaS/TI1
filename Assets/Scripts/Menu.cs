@@ -8,7 +8,7 @@ public class Menu : MonoBehaviour
 
     void Start()
     {
-        painelPausa.SetActive(false); // desativa no início
+        painelPausa.SetActive(true); // desativa no início
     }
     void Update()
     {

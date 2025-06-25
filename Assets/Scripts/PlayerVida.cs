@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerVida : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class PlayerVida : MonoBehaviour
         Debug.Log("Player morreu!");
         morto = true;
         gameObject.SetActive(false);
-        Time.timeScale = 0f;
+        SceneManager.LoadScene("TelaDerrota");
     }
 
     public bool EstaMorto()

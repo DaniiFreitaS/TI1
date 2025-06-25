@@ -6,7 +6,8 @@ public class PlayerMovimento : MonoBehaviour
     public float velocidade = 10f;
     private CharacterController controller;
 
-    public float limiteX = 70f;
+    public float limiteXMax = 20f;
+    public float limiteXMin = -10f;
     public float limiteZMax = 40f;
     public float limiteZMin = -10f;
 
@@ -25,7 +26,7 @@ public class PlayerMovimento : MonoBehaviour
         if (next.z > limiteZMax || next.z < limiteZMin)
             move.z = 0f;
 
-        if (next.x > limiteX || next.x < -limiteX)
+        if (next.x > limiteXMax || next.x < limiteXMin)
             move.x = 0f;
 
         controller.Move(move);

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InimigoController : MonoBehaviour
 {
@@ -79,5 +80,6 @@ public class InimigoController : MonoBehaviour
         }
 
         Destroy(gameObject);
+        SceneManager.LoadScene("TelaVitoria");
     }
 }

@@ -46,10 +46,7 @@ public class BombaController : MonoBehaviour
 
     void Explodir()
     {
-        if (explosaoPrefab != null)
-        {
-            Instantiate(explosaoPrefab, transform.position, Quaternion.identity);
-        }
+        Instantiate(explosaoPrefab, transform.position, Quaternion.identity);
         ExplosaoInstanciet();
         Destroy(gameObject);
     }
