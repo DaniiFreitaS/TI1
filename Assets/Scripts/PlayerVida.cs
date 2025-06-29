@@ -20,6 +20,10 @@ public class PlayerVida : MonoBehaviour
         {
             Morrer();
         }
+        if (vida > 3) 
+        {
+            vida = 3;
+        }
     }
 
     void Morrer()

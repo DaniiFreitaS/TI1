@@ -4,8 +4,8 @@ public class PlayerMira : MonoBehaviour
 {
     public Transform arma;
     public float rotacaoSpeed = 30f;
-    public float anguloMax = 0f;
-    public float anguloMin = -45f;
+    private float anguloMax = 0f;
+    private float anguloMin = -10f;
 
     private float anguloAtual = 0f;
 
