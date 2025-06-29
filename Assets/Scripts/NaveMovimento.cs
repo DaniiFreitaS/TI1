@@ -16,8 +16,8 @@ public class NaveMovimento : MonoBehaviour
     void Update()
     {
         float h = Input.GetAxis("Horizontal"); // Apenas o eixo X
-        float V = Input.GetAxis("Vertical"); // Apenas o eixo y
-        Vector3 move = new Vector3(h, 0f, V) * velocidade * Time.deltaTime;
+        //float V = Input.GetAxis("Vertical"); // Apenas o eixo y
+        Vector3 move = new Vector3(h, 0f, 0) * velocidade * Time.deltaTime;
         Vector3 next = transform.localPosition + move;
 
         // Limita o movimento no eixo X apenas

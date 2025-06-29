@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class InimigoController : MonoBehaviour
 {
-    public int vida = 5;
+    public int vida = 20;
 
     private float velocidade = 10f;
     private float limiteEsquerdo = -10f;
@@ -22,9 +22,11 @@ public class InimigoController : MonoBehaviour
 
     public GameObject explosaoPrefab = null; // futuro efeito visual
 
+    public GameObject dropVida;
+
     void Start()
     {
-        vida = 5;
+        vida = 20;
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
@@ -49,6 +51,7 @@ public class InimigoController : MonoBehaviour
             //Debug.Log("Inimigo atirou");
             Atirar();
             tempoProximoTiro = Time.time + tempoEntreTiros;
+            
         }
     }
 
@@ -58,6 +61,11 @@ public class InimigoController : MonoBehaviour
         GameObject tiro = Instantiate(prefabTiro, pontoDisparo.position, Quaternion.identity);
         Destroy(tiro, 10f); // Destrói o tiro após 10 segundos}
 
+    }
+    void AtirarVida()
+    {
+        GameObject tiro = Instantiate(dropVida, pontoDisparo.position, Quaternion.identity);
+        Destroy(tiro, 10f); // Destrói o tiro após 10 segundos}
     }
 
 
@@ -72,6 +80,10 @@ public class InimigoController : MonoBehaviour
             {
                 Explodir();
                 ExplosaoInstanciet();
+            }
+            if (vida < 20 && vida % 5 == 0)
+            {
+                AtirarVida();
             }
         }
     }

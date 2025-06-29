@@ -74,6 +74,7 @@ MonoBehaviour:
   tempoEntreTiros: 2
   hitParticle: {fileID: 6075823944692295460, guid: d410e713cf0ab0340a5ffe543f41a2bb, type: 3}
   explosaoPrefab: {fileID: 0}
+  dropVida: {fileID: 1912698526328281957, guid: 235c0f903d4b18440a97482a67faf0c7, type: 3}
 --- !u!1 &4267987741117700369
 GameObject:
   m_ObjectHideFlags: 0
