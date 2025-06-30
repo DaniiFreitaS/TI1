@@ -11,6 +11,8 @@ public class PlayerMovimento : MonoBehaviour
     public float limiteZMax = 40f;
     public float limiteZMin = -10f;
 
+    public bool player2 = false;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -20,6 +22,10 @@ public class PlayerMovimento : MonoBehaviour
     {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
+        if (player2)
+        {
+            v = 0;
+        }
         Vector3 move = new Vector3(h, 0f, v) * velocidade * Time.deltaTime;
         Vector3 next = transform.localPosition + move;
 
