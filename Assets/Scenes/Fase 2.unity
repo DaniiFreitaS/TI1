@@ -3630,7 +3630,7 @@ PrefabInstance:
     - target: {fileID: -4683669308469848369, guid: f173ef64216df8c4ca21ca6f37db7ec2, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 138b410299a2c1d499f7f50c3adb4399, type: 2}
+      objectReference: {fileID: 2100000, guid: 993ebb7b77347504b97aa187e674b9f8, type: 2}
     - target: {fileID: 919132149155446097, guid: f173ef64216df8c4ca21ca6f37db7ec2, type: 3}
       propertyPath: m_Name
       value: aliennovoblend (1)
