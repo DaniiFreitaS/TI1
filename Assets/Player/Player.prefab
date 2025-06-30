@@ -116,8 +116,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arma: {fileID: 1553761789084970461}
   rotacaoSpeed: 30
-  anguloMax: 0
-  anguloMin: -45
 --- !u!114 &7655563007412996335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,8 +399,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b810610b3500cbf4987648df39f8df9a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3445421599594422822}
   m_SourcePrefab: {fileID: 100100000, guid: b810610b3500cbf4987648df39f8df9a, type: 3}
+--- !u!1 &1352514519378569361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b810610b3500cbf4987648df39f8df9a, type: 3}
+  m_PrefabInstance: {fileID: 2162978086068622784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3445421599594422822
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352514519378569361}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 30a33c67f574e5842848596d189b0d96, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1841629640262578731 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b810610b3500cbf4987648df39f8df9a, type: 3}
