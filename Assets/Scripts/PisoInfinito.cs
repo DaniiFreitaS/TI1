@@ -11,7 +11,7 @@ public class PisoInfinito : MonoBehaviour
         foreach (Transform piso in pisos)
         {
             // Se o piso está muito para trás da tela, reposiciona ele para frente
-            if (piso.position.z + comprimentoTile * 1.5f < tela.position.z)
+            if (piso.position.z + comprimentoTile * 1f < tela.position.z)
             {
                 // Encontra o mais à frente e posiciona depois dele
                 float maiorZ = EncontrarMaiorZ();

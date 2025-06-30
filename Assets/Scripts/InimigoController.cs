@@ -10,6 +10,7 @@ public class InimigoController : MonoBehaviour
     private float limiteDireito = 25f;
 
     public GameObject prefabTiro;
+    public GameObject prefabMissil;
     public Transform pontoDisparo;
     public float tempoEntreTiros = 10f;
 
@@ -57,9 +58,21 @@ public class InimigoController : MonoBehaviour
 
     void Atirar()
     {
-        // Instancia a bomba
-        GameObject tiro = Instantiate(prefabTiro, pontoDisparo.position, Quaternion.identity);
-        Destroy(tiro, 10f); // Destrói o tiro após 10 segundos}
+        int range = Random.Range(0, 2);
+        Debug.Log(range);
+        if (range == 0)
+        {
+            
+            GameObject tiro = Instantiate(prefabTiro, pontoDisparo.position, prefabTiro.transform.rotation);
+            Destroy(tiro, 10f); // Destrói o tiro após 10 segundos}
+        }
+        else
+        {
+            Debug.Log("0");
+            GameObject tiro = Instantiate(prefabMissil, pontoDisparo.position, prefabMissil.transform.rotation);
+            Destroy(tiro, 10f); // Destrói o tiro após 10 segundos}
+        }
+
 
     }
     void AtirarVida()

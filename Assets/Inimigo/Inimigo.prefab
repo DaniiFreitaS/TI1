@@ -70,6 +70,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 5
   prefabTiro: {fileID: 56793413920543781, guid: b77a545e5c3bf3043ad5e7cdaa5360f4, type: 3}
+  prefabMissil: {fileID: 430435669259371892, guid: cad83e1271983ed4db1f8cfbd0682cdf, type: 3}
   pontoDisparo: {fileID: 5270351376949034923}
   tempoEntreTiros: 2
   hitParticle: {fileID: 6075823944692295460, guid: d410e713cf0ab0340a5ffe543f41a2bb, type: 3}

@@ -4,11 +4,12 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public GameObject painelPausa;
+    public GameObject painelConfig;
     private bool jogoPausado = false;
 
     void Start()
     {
-        painelPausa.SetActive(true); // desativa no início
+        painelPausa.SetActive(true);
     }
     void Update()
     {
@@ -46,5 +47,19 @@ public class Menu : MonoBehaviour
     {
         Application.Quit();
 
+    }
+
+    public void Config()
+    {
+        this.gameObject.SetActive(false);
+        painelConfig.SetActive(true);
+        painelPausa.SetActive(false);
+    }
+
+    public void MenuInicio()
+    {
+        this.gameObject.SetActive(true);
+        painelConfig.SetActive(false);
+        painelPausa.SetActive(true);
     }
 }
