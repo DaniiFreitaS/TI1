@@ -4,7 +4,7 @@ using UnityEngine;
 public class Pontuacao : MonoBehaviour
 {
     public TextMeshProUGUI text;
-    private int score;
+    public int score = 0;
     void Start()
     {
         text = GetComponent<TextMeshProUGUI>();

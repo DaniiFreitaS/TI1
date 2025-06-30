@@ -19,9 +19,9 @@ public class EnemyShooter : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("oi");
         if (other.gameObject.CompareTag("Player"))
         {
+            Debug.Log("oi");
             PlayerVida player = other.gameObject.GetComponent<PlayerVida>();
             player.ReceberDano(1);
             Destroy(this.gameObject);

@@ -23,22 +23,35 @@ public class SpawnInimigos : MonoBehaviour
     private float clock;
     private List<EnemyController> inimigosVivos = new List<EnemyController>();
     private List<EnemyController> inimigosUltimaLinha = new List<EnemyController>();
+
+    public Pontuacao score;
     void Start()
     {
         posicaoInicial = transform.position;
-        InstanciarInimigos();
+        Invoke("InstanciarInimigos", 2f);
+        //InstanciarInimigos();
     }
 
     private void Update()
     {
-        clock -= Time.deltaTime;
-        if (clock < 0)
-        {
-            clock = delaytiro;
-            Atirar();
-        }
-        Movimentar();
+        
         trocaDirecao = false;
+
+        if (score.score > 99) 
+        {
+
+        }
+        else
+        {
+            clock -= Time.deltaTime;
+            if (clock < 0)
+            {
+                clock = delaytiro;
+                Atirar();
+            }
+            Movimentar();
+        }
+
     }
 
 
