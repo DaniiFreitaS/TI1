@@ -108,7 +108,7 @@ public class InimigoController : MonoBehaviour
             Instantiate(explosaoPrefab, transform.position, Quaternion.identity);
         }
 
-        Destroy(gameObject);
+        Destroy(gameObject, 5f);
         SceneManager.LoadScene("TelaVitoria");
     }
 

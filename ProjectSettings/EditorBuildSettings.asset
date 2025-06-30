@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TelaDerrota.unity
     guid: f1010230852f8914a8310661e98dba5e
+  - enabled: 1
+    path: Assets/Scenes/Fase 2.unity
+    guid: b19bc81a6167a4540af2ad356f31e23d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
