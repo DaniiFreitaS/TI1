@@ -49,6 +49,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posicaoLinha: 0
+  pontuacao: {fileID: 0}
+  prefabTiro: {fileID: 7018765556580808314, guid: f71b542142e6cac4c91f40a0f470edfc, type: 3}
+  pontoDisparo: {fileID: 2996050566801861622}
+  tela: {fileID: 0}
 --- !u!54 &1815186835936882165
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -1,27 +1,30 @@
 using UnityEngine;
+using static Unity.Burst.Intrinsics.X86;
 
 public class EnemyShooter : MonoBehaviour
 {
-    public GameObject bulletPrefab;
-    public Transform firePoint;
-
-    private Transform paiInimigo;
+    public float velocidade = 100f;
+    public float tempoDestruir = 5f;
 
     void Start()
     {
-        paiInimigo = transform.parent;
+        Destroy(this.gameObject, tempoDestruir);
     }
 
     void Update()
     {
-        if (paiInimigo == null)
-        {
-            Destroy(gameObject);
-        }
-    }
+        
+        transform.Translate(-Vector3.up * velocidade * Time.deltaTime);
 
-    public void Shoot()
+    }
+    private void OnTriggerEnter(Collider other)
     {
-        Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        Debug.Log("oi");
+        if (other.gameObject.CompareTag("Player"))
+        {
+            PlayerVida player = other.gameObject.GetComponent<PlayerVida>();
+            player.ReceberDano(1);
+            Destroy(this.gameObject);
+        }
     }
 }

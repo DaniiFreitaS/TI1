@@ -35,7 +35,7 @@ public class SpawnInimigos : MonoBehaviour
         if (clock < 0)
         {
             clock = delaytiro;
-            //Atirar();
+            Atirar();
         }
         Movimentar();
         trocaDirecao = false;
@@ -96,7 +96,7 @@ public class SpawnInimigos : MonoBehaviour
         if(inimigosUltimaLinha.Count > 0)
         {
             int rand = Random.Range(0, inimigosUltimaLinha.Count);
-            EnemyShooter e = inimigosUltimaLinha[rand].GetComponent<EnemyShooter>();
+            EnemyController e = inimigosUltimaLinha[rand].GetComponent<EnemyController>();
             e.Shoot();
         }
     }

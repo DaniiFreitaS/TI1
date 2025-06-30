@@ -180,6 +180,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7018765556580808314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43458e289689cb140bd8c90580f55075, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d9ef5e26fb4ca34788e2a5b7b880f61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidade: 100
+  tempoDestruir: 5
