@@ -6,14 +6,12 @@ public class Quadro : MonoBehaviour
     void Start()
     {
         quadro.SetActive(true);
-        StartCoroutine(DesativarDepoisDe10Segundos());
         Time.timeScale = 0f;
     }
-
-    IEnumerator DesativarDepoisDe10Segundos()
+    public void Skip()
     {
-        yield return new WaitForSeconds(10f);
-        gameObject.SetActive(false);
+        quadro.SetActive(false);
         Time.timeScale = 1f;
     }
+    
 }
