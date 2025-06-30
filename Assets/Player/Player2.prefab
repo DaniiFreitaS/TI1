@@ -109,9 +109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2497fade074c2444c80a87ae32ffe0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabTiro: {fileID: 0}
+  prefabTiro: {fileID: 7018765556580808314, guid: 08a3f59aa34a55840bebab0fee7b8747, type: 3}
   pontoDisparo: {fileID: 2957794623583369149}
   tela: {fileID: 0}
+  fase2: 1
 --- !u!114 &8261490067753270940
 MonoBehaviour:
   m_ObjectHideFlags: 0
