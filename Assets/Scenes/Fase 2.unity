@@ -1396,15 +1396,15 @@ PrefabInstance:
     - target: {fileID: 8591941016662316979, guid: b67448979a47ec347aaa18cb0c3936d5, type: 3}
       propertyPath: 'coracoes.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1909220022}
     - target: {fileID: 8591941016662316979, guid: b67448979a47ec347aaa18cb0c3936d5, type: 3}
       propertyPath: 'coracoes.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 915103840}
     - target: {fileID: 8591941016662316979, guid: b67448979a47ec347aaa18cb0c3936d5, type: 3}
       propertyPath: 'coracoes.Array.data[2]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2140933766}
     - target: {fileID: 8828921980535888047, guid: b67448979a47ec347aaa18cb0c3936d5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

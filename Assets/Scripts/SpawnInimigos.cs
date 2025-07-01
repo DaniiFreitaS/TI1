@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpawnInimigos : MonoBehaviour
 {
@@ -39,7 +40,7 @@ public class SpawnInimigos : MonoBehaviour
 
         if (score.score > 99) 
         {
-
+            SceneManager.LoadScene("TelaVitoria2fase");
         }
         else
         {
