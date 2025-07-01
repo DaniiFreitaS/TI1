@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase 2.unity
     guid: b19bc81a6167a4540af2ad356f31e23d
+  - enabled: 1
+    path: Assets/Scenes/Derrota2.unity
+    guid: 1ffe61a364efc484c9e4489b7b9f1647
+  - enabled: 1
+    path: Assets/Scenes/TelaVitoria2fase.unity
+    guid: 05e4e37a5b1cd0a4abfcc64f407842b7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
