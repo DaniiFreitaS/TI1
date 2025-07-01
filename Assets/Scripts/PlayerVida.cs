@@ -6,6 +6,7 @@ public class PlayerVida : MonoBehaviour
 {
     public int vida = 3;
     private bool morto = false;
+    public bool fase2 = false;
 
     public static event Action<int> OnVidaAtualizada;
 
@@ -31,7 +32,14 @@ public class PlayerVida : MonoBehaviour
         Debug.Log("Player morreu!");
         morto = true;
         gameObject.SetActive(false);
-        SceneManager.LoadScene("TelaDerrota");
+        if (fase2)
+        {
+            SceneManager.LoadScene("Derrota2");
+        }
+        else
+        {
+            SceneManager.LoadScene("TelaDerrota");
+        }
     }
 
     public bool EstaMorto()
