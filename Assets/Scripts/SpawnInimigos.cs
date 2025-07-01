@@ -124,7 +124,7 @@ public class SpawnInimigos : MonoBehaviour
         {
             if (inimigo.transform.position.y <= limiteInf) 
             {
-                Time.timeScale = 0f;  //para quando chega no limite inferior, trocar para tela de derrota    
+                SceneManager.LoadScene("Derrota2");
             }
             if (!trocaDirecao && ( inimigo.transform.position.x <= limiteEsq || inimigo.transform.position.x >= limiteDir ))
             {
