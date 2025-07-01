@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &98939006
 RectTransform:
   m_ObjectHideFlags: 0
@@ -154,7 +154,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &98939007
 MonoBehaviour:
@@ -297,7 +297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &119257999
 RectTransform:
   m_ObjectHideFlags: 0
@@ -315,7 +315,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &119258000
 MonoBehaviour:
@@ -858,7 +858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &442643343
 RectTransform:
   m_ObjectHideFlags: 0
@@ -876,7 +876,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &442643344
 MonoBehaviour:
@@ -1002,6 +1002,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512764065}
   m_Mesh: {fileID: -5801228030656462994, guid: 03a70af310d38024e958fb0c32d9f4bd, type: 3}
+--- !u!1 &535370656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7567522202922625106, guid: b67448979a47ec347aaa18cb0c3936d5, type: 3}
+  m_PrefabInstance: {fileID: 1053039556}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &561549230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1184,24 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8544744652548425994, guid: b67448979a47ec347aaa18cb0c3936d5, type: 3}
   m_PrefabInstance: {fileID: 1053039556}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &613300879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535370656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c00017bafe3b74686db093c6f83514, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogo1: {fileID: 1601748102}
+  dialogo2: {fileID: 98939007}
+  dialogo3: {fileID: 442643344}
+  dialogo4: {fileID: 745016381}
+  dialogo5: {fileID: 119258000}
+  tela: {fileID: 2101616406}
 --- !u!1 &745016379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,7 +1219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &745016380
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1214,7 +1237,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745016381
 MonoBehaviour:
@@ -1763,7 +1786,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8120244792993167110, guid: b67448979a47ec347aaa18cb0c3936d5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2140933765}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7567522202922625106, guid: b67448979a47ec347aaa18cb0c3936d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 613300879}
   m_SourcePrefab: {fileID: 100100000, guid: b67448979a47ec347aaa18cb0c3936d5, type: 3}
 --- !u!1 &1120212701
 GameObject:
@@ -2842,7 +2868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1601748101
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2860,7 +2886,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1601748102
 MonoBehaviour:
