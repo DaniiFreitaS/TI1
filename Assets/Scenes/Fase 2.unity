@@ -1277,6 +1277,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7718215740768123718, guid: b67448979a47ec347aaa18cb0c3936d5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718215740768123718, guid: b67448979a47ec347aaa18cb0c3936d5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -160
+      objectReference: {fileID: 0}
     - target: {fileID: 8120244792993167110, guid: b67448979a47ec347aaa18cb0c3936d5, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.23
@@ -2710,8 +2718,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292087126
-  m_fontColor: {r: 0.3374599, g: 0.05090782, b: 0.8301887, a: 1}
+    rgba: 4294463880
+  m_fontColor: {r: 0.5347396, g: 0.31626022, b: 0.9716981, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3494,7 +3502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 03a70af310d38024e958fb0c32d9f4bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6600857
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 03a70af310d38024e958fb0c32d9f4bd, type: 3}
       propertyPath: m_LocalPosition.z
